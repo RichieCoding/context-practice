@@ -9,9 +9,15 @@ export const decrement = () => {
   return { type: "DECREMENT" };
 };
 
-export const setProducts = (products) => {
+export const fetchProducts = () => {
   return {
-    type: 'SET_PRODUCTS',
+    type: 'FETCH_PRODUCTS_REQUEST'
+  }
+}
+
+export const fetchProductsSuccess = products => {
+  return {
+    type: 'FETCH_PRODUCTS_SUCCESS',
     payload: products
   }
 }
