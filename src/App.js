@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement, products } from "./actions";
+import { increment, decrement } from "./actions";
 import Header from './components/Header';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   const isLogged = useSelector(state => state.isLogged);
   const dispatch = useDispatch();
   return (
-    <div className='App'>
+    <div className='App'> 
       <h1>Counter {counter}</h1>
       <button onClick={() => dispatch(increment(5))}>+</button>
       <button onClick={() => dispatch(decrement())}>-</button>
