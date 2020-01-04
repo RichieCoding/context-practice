@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "./actions";
 import Header from './components/Header';
@@ -12,6 +12,7 @@ function App() {
     <div className='App'> 
       <h1>Counter {counter}</h1>
       <h2>Products</h2>
+      <h3>All products</h3>
       <button onClick={() => dispatch(increment(5))}>+</button>
       <button onClick={() => dispatch(decrement())}>-</button>
       {isLogged ? <h3>Valuable Information I shouldn't see</h3> : ""}
