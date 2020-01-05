@@ -13,6 +13,7 @@ function App() {
       <h1>Counter {counter}</h1>
       <h2>Products</h2>
       <h3>All products</h3>
+      <h4>Increment</h4>
       <button onClick={() => dispatch(increment(5))}>+</button>
       <button onClick={() => dispatch(decrement())}>-</button>
       {isLogged ? <h3>Valuable Information I shouldn't see</h3> : ""}
