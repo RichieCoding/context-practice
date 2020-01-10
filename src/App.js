@@ -14,6 +14,8 @@ function App() {
       <h2>Products</h2>
       <h3>All products</h3>
       <h4>Increment</h4>
+      <h4>Increment</h4>
+      <h4>Increment</h4>
       <h3>Decrement</h3>
       <button onClick={() => dispatch(increment(5))}>+</button>
       <button onClick={() => dispatch(decrement())}>-</button>
